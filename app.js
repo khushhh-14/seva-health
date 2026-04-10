@@ -2,7 +2,7 @@ var app = angular.module('HealthApp', []);
 
 app.controller('MainController', function($scope, $window, $http) {
 
-    var API = 'https://digital-health-wallet-ysb8.onrender.com/api';
+var API = 'https://seva-health.onrender.com/api';
 
     function getToken() {
         return sessionStorage.getItem('authToken');

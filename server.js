@@ -7,7 +7,7 @@ require('dotenv').config();
 
 const app = express();
 app.use(cors({
-    origin: ['https://khushhh-14.github.io', 'http://localhost:3000', 'http://127.0.0.1:5500'],
+    origin: ['https://Seva-Health-Project.github.io', 'http://localhost:3000', 'http://127.0.0.1:5500'],
     methods: ['GET', 'POST', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));

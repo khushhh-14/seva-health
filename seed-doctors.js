@@ -3,12 +3,13 @@ const mysql  = require('mysql2/promise');
 require('dotenv').config();
 
 const doctors = [
-    { name: 'Dr. Harsh Savalia', username: 'harsh',   password: 'pass123'    },
-    { name: 'Dr. Khush',         username: 'khush',   password: 'khush123'   },
-    { name: 'Dr. Naiya',         username: 'naiya',   password: 'naiya123'   },
-    { name: 'Dr. Pratha',        username: 'pratha',  password: 'pratha123'  },
-    { name: 'Dr. Nishtha',       username: 'nishtha', password: 'nishtha123' },
-];
+            { name: 'Dr. Khush', username: 'khush',   password: 'khush123'},
+            { name: 'Dr. Hitansh', username: 'hitansh',   password: 'hitansh123'},
+            { name: 'Dr. Shlok', username: 'shlok',   password: 'shlok123'},
+            { name: 'Dr. Nilansh', username: 'nilansh',   password: 'nilansh123'},
+            { name: 'Dr. Pratiksha', username: 'pratiksha',   password: 'pratiksha123'   },
+            
+        ];
 
 async function seed() {
     const db = await mysql.createConnection({
